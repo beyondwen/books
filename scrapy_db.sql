@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80011
 File Encoding         : 65001
 
-Date: 2018-11-16 17:01:59
+Date: 2018-11-16 17:22:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -128,25 +128,25 @@ INSERT INTO `book` VALUES ('9588', '《宋人所撰三苏年谱汇刊：王水�
 INSERT INTO `book` VALUES ('9589', '《大宋帝国征服史（精制多看版）》cuslaa（作者）epub', 'https://pan.baidu.com/s/1ZMglCGbf3F6Iuqrd4OLHKg', 'vl9j', '01');
 INSERT INTO `book` VALUES ('9590', '《北平味儿》季剑青（编著）epub+mobi+azw3', 'https://pan.baidu.com/s/1gCbhXBNMurKuOgResFZBjA', '7a05', '01');
 INSERT INTO `book` VALUES ('9591', '《镇河（自制）》我爱吃山竹（作者）epub+mobi', 'https://pan.baidu.com/s/1C3nMR5q8hClQgIQJ79d-hA', 'ziq4', '01');
-INSERT INTO `book` VALUES ('9592', '《记忆迷踪》启山（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1FcHEuXSNPK4TtSal9Ri5fg', '8zhp', '00');
-INSERT INTO `book` VALUES ('9593', '《死神来了》斯迪姆•席普•凡迪恩（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1OIw-DxPNE0hL90-0DafpZA', 'hgbo', '00');
-INSERT INTO `book` VALUES ('9594', '《宛如梦幻：江户烟岚》赤军（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1UzCNbvDwfpy5J-KSDtrk6w', 'lhys', '00');
-INSERT INTO `book` VALUES ('9595', '《重返美丽新世界》[英]阿道司·赫胥黎（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1U_IPU-GBYAdkbcydIm6IeA', 'uvlr', '00');
-INSERT INTO `book` VALUES ('9596', '《老衲要还俗（自制）》一梦黄粱（作者）epub+mobi', 'https://pan.baidu.com/s/1scRCwazTvRsQeJi7WgSwWg', '39ag', '00');
-INSERT INTO `book` VALUES ('9597', '《山水之间：生活与理性的未思》[法]朱利安（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1D3JUmCG3HwwUAXrRTVT1qA', 'ese7', '00');
-INSERT INTO `book` VALUES ('9598', '《苏轼选集：王水照苏轼研究四种（修订本）》王水照（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1647v2QxLEnL2vNAQKoBotA', 'ip48', '00');
-INSERT INTO `book` VALUES ('9599', '《奇幻钟表匠》安娜·艾莉夏奇加（作者）epub+mobi', 'https://pan.baidu.com/s/13xmoNo2wnXD0C0prYBvyGw', 'j83x', '00');
-INSERT INTO `book` VALUES ('9600', '《宛如梦幻：苇原露华》赤军（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1eAHIu8mDKR0faiwWwiYS2Q', 'vu9q', '00');
-INSERT INTO `book` VALUES ('9601', '《我的1997》张强&李康（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1blS4fN0v9MZgb4aaJEzoeQ', 'ijpq', '00');
-INSERT INTO `book` VALUES ('9602', '《完美现场》于雷（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1u4Epeuq_NFf-mWqtS20l0w', 'beh0', '00');
-INSERT INTO `book` VALUES ('9603', '《魍魉世界》张恨水（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1Y8PQnhKkUJ1p0VNvZNqOBw', 'ossq', '00');
-INSERT INTO `book` VALUES ('9604', '《三国之宅行天下（自制）》贱宗首席弟子（作者）epub+mobi', 'https://pan.baidu.com/s/1pVKCdjI8MFcwpPlBRGyEMQ', 'c1zl', '00');
-INSERT INTO `book` VALUES ('9605', '《畅游北欧，看这本就够了》畅游世界编辑部（主编）epub+mobi+azw3', 'https://pan.baidu.com/s/1rHtDgnHo7clSW7flZZEF0g', '5kno', '00');
-INSERT INTO `book` VALUES ('9606', '《速写好有趣》漫果（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/18S1DoufVU4BXFUAGlipavg', 'czrd', '00');
-INSERT INTO `book` VALUES ('9607', '《微信公众平台开发：从零基础到ThinkPHP5高性能框架实践》方倍工作室（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1a_uOpk2ih428JYvJGwlI0g', 'tjyl', '00');
-INSERT INTO `book` VALUES ('9608', '《探寻中国趣味》郭英德（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1LMllwlEmon_YHcyMmFTHAw', '3p5w', '00');
-INSERT INTO `book` VALUES ('9609', '《魔兽世界编年史史诗级套装》[美]克里斯·梅森 等（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1wTM1SjuneqT8TF_9jj0ZjA', 'bpy8', '00');
-INSERT INTO `book` VALUES ('9610', '《中华经典名著全本全注全译丛书：公孙龙子（外三种）》黄克剑（译注）epub+mobi+azw3', 'https://pan.baidu.com/s/1mG-CBU3x2gTml6q77px3ng', '2shu', '00');
+INSERT INTO `book` VALUES ('9592', '《记忆迷踪》启山（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1FcHEuXSNPK4TtSal9Ri5fg', '8zhp', '01');
+INSERT INTO `book` VALUES ('9593', '《死神来了》斯迪姆•席普•凡迪恩（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1OIw-DxPNE0hL90-0DafpZA', 'hgbo', '01');
+INSERT INTO `book` VALUES ('9594', '《宛如梦幻：江户烟岚》赤军（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1UzCNbvDwfpy5J-KSDtrk6w', 'lhys', '01');
+INSERT INTO `book` VALUES ('9595', '《重返美丽新世界》[英]阿道司·赫胥黎（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1U_IPU-GBYAdkbcydIm6IeA', 'uvlr', '01');
+INSERT INTO `book` VALUES ('9596', '《老衲要还俗（自制）》一梦黄粱（作者）epub+mobi', 'https://pan.baidu.com/s/1scRCwazTvRsQeJi7WgSwWg', '39ag', '01');
+INSERT INTO `book` VALUES ('9597', '《山水之间：生活与理性的未思》[法]朱利安（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1D3JUmCG3HwwUAXrRTVT1qA', 'ese7', '01');
+INSERT INTO `book` VALUES ('9598', '《苏轼选集：王水照苏轼研究四种（修订本）》王水照（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1647v2QxLEnL2vNAQKoBotA', 'ip48', '01');
+INSERT INTO `book` VALUES ('9599', '《奇幻钟表匠》安娜·艾莉夏奇加（作者）epub+mobi', 'https://pan.baidu.com/s/13xmoNo2wnXD0C0prYBvyGw', 'j83x', '01');
+INSERT INTO `book` VALUES ('9600', '《宛如梦幻：苇原露华》赤军（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1eAHIu8mDKR0faiwWwiYS2Q', 'vu9q', '01');
+INSERT INTO `book` VALUES ('9601', '《我的1997》张强&李康（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1blS4fN0v9MZgb4aaJEzoeQ', 'ijpq', '01');
+INSERT INTO `book` VALUES ('9602', '《完美现场》于雷（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1u4Epeuq_NFf-mWqtS20l0w', 'beh0', '01');
+INSERT INTO `book` VALUES ('9603', '《魍魉世界》张恨水（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1Y8PQnhKkUJ1p0VNvZNqOBw', 'ossq', '01');
+INSERT INTO `book` VALUES ('9604', '《三国之宅行天下（自制）》贱宗首席弟子（作者）epub+mobi', 'https://pan.baidu.com/s/1pVKCdjI8MFcwpPlBRGyEMQ', 'c1zl', '01');
+INSERT INTO `book` VALUES ('9605', '《畅游北欧，看这本就够了》畅游世界编辑部（主编）epub+mobi+azw3', 'https://pan.baidu.com/s/1rHtDgnHo7clSW7flZZEF0g', '5kno', '01');
+INSERT INTO `book` VALUES ('9606', '《速写好有趣》漫果（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/18S1DoufVU4BXFUAGlipavg', 'czrd', '01');
+INSERT INTO `book` VALUES ('9607', '《微信公众平台开发：从零基础到ThinkPHP5高性能框架实践》方倍工作室（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1a_uOpk2ih428JYvJGwlI0g', 'tjyl', '01');
+INSERT INTO `book` VALUES ('9608', '《探寻中国趣味》郭英德（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1LMllwlEmon_YHcyMmFTHAw', '3p5w', '01');
+INSERT INTO `book` VALUES ('9609', '《魔兽世界编年史史诗级套装》[美]克里斯·梅森 等（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1wTM1SjuneqT8TF_9jj0ZjA', 'bpy8', '01');
+INSERT INTO `book` VALUES ('9610', '《中华经典名著全本全注全译丛书：公孙龙子（外三种）》黄克剑（译注）epub+mobi+azw3', 'https://pan.baidu.com/s/1mG-CBU3x2gTml6q77px3ng', '2shu', '01');
 INSERT INTO `book` VALUES ('9611', '《碎片》[日]青山七惠（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1hcDj7fnpE3mZT8pAGgBEBQ', 'b28v', '00');
 INSERT INTO `book` VALUES ('9612', '《爱因斯坦的宇宙》[美]阿尔伯特·爱因斯坦（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1DMabbTtIMn7q-5jnoqoW9A', 'zjnz', '00');
 INSERT INTO `book` VALUES ('9613', '《宛如梦幻：战国风雨》赤军（作者）epub+mobi+azw3', 'https://pan.baidu.com/s/1KnvborsCf5_h5qDIrA0ICw', 'cw3b', '00');
