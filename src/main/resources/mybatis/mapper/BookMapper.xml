@@ -1,0 +1,58 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wenhao.books.mapper.BookMapper">
+    <!--<resultMap type="com.wenhao.books.domain.Book" id="bookmap">-->
+        <!--<id column="id" property="id"/>-->
+        <!--<result column="book_name" property="name"/>-->
+        <!--<result column="book_url" property="url"/>-->
+        <!--<result column="book_password" property="password"/>-->
+    <!--</resultMap>-->
+
+    <!--<select id="getAll" resultMap="bookmap" parameterType="map">-->
+        <!--select *-->
+        <!--from books-->
+        <!--<where>-->
+            <!--<if test="name !=null and name !=''">-->
+                <!--AND book_name like "%" #{name} "%"-->
+            <!--</if>-->
+        <!--</where>-->
+    <!--</select>-->
+
+    <!--<select id="getOne" resultMap="bookmap">-->
+        <!--select *-->
+        <!--from books-->
+        <!--where id = #{id}-->
+    <!--</select>-->
+
+    <!--<select id="getUser" resultMap="usermap">
+        select * from users
+    </select>
+    <where>
+            <if test="name !=null and name !=''">
+                AND book_name like "%" #{name} "%"
+            </if>
+        </where>
+    <insert id="insert">
+        insert into users (id, name, funkyNumber, roundingMode) values (
+                                                                           #{id}, #{name}, #{funkyNumber}, #{roundingMode}
+                                                                       )
+    </insert>
+
+    <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap2">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="funkyNumber" property="funkyNumber"/>
+        <result column="roundingMode" property="roundingMode" typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
+    </resultMap>
+    <select id="getUser2" resultMap="usermap2">
+        select * from users2
+    </select>
+    <insert id="insert2">
+        insert into users2 (id, name, funkyNumber, roundingMode) values (
+                                                                            #{id}, #{name}, #{funkyNumber}, #{roundingMode, typeHandler=org.apache.ibatis.type.EnumTypeHandler}
+                                                                        )
+    </insert>-->
+
+</mapper>
