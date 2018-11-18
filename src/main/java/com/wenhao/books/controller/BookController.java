@@ -13,7 +13,8 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
-public class BookController {
+public class
+BookController {
 
     @Autowired
     private BookService bookService;
@@ -22,6 +23,7 @@ public class BookController {
     @GetMapping("/list")
     public ModelAndView list(Book book) {
         ModelAndView model = new ModelAndView("list");
+        System.out.println(book.getPage());
         List<Book> books = bookService.getAllByWeekend(book);
         model.addObject("pageInfo", new PageInfo<Book>(books));
         model.addObject("queryParam", book);

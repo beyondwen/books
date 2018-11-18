@@ -61,7 +61,7 @@
         <li class="page-item" th:if="${pageInfo.pageNum +2 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +2}}" th:text="${pageInfo.pageNum +2}">1</a></li>
         <li class="page-item" th:if="${pageInfo.pageNum +3 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +3}}" th:text="${pageInfo.pageNum +3}">1</a></li>
         <li th:class="${pageInfo.pageNum == pageInfo.pages}?'page-item disabled' : ''" >
-            <a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}">下一页</a>
+            <a id="pageno" class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}">下一页</a>
         </li>
         <li class="page-item" >
             <a class="page-link" th:href="@{'list?page=' + ${pageInfo.pages}}">尾页</a>
