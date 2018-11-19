@@ -30,7 +30,7 @@
     </tr>
     </thead>
     <tr th:each="book:${pageInfo.list}" class="booktr">
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.id}"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.id}" class="bookid"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.name}" class="bookName"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.url}"class="bookUrl"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.password}" class="pwd"></span></td>
