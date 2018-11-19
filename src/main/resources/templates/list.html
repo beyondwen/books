@@ -48,7 +48,7 @@
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         <li class="page-item" >
-            <a class="page-link" th:href="@{'list?page=1'}">首页</a>
+            <a id="shouye" class="page-link" th:href="@{'list?page=1'}">首页</a>
         </li>
         <li th:class="${pageInfo.pageNum==1}?'page-item disabled' : ''">
             <a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -1}}" tabindex="-1">上一页</a>
