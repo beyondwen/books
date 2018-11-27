@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="//qidian.gtimg.com/lulu/theme/peak/css/common/ui.css">
+    <link rel="stylesheet" href="//qidian.gtimg.com/lulu/theme/peak/css/common/comp/Table.css">
+    <link rel="stylesheet" href="//qidian.gtimg.com/lulu/theme/peak/css/common/ui/Pagination.css">
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/plugin/jquery.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/ui/Pagination.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/ui/Loading.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/ui/Follow.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/ui/Drop.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/ui/DropList.js"></script>
+    <script src="//qidian.gtimg.com/lulu/theme/peak/js/common/comp/Table.js"></script>
+</head>
+<body>
+<div class="table-x table-checkbox">
+    <div class="table-size">
+        <table id="testtable-mix" class="ui-table">
+            <thead>
+            <tr>
+                <th scope="col"><input type="checkbox" id="chkAll_mix"><label class="ui-checkbox"
+                                                                              for="chkAll_mix"></label></th>
+                <th scope="col">书籍名称</th>
+                <th scope="col" width="200">网盘链接</th>
+                <th scope="col" width="100">网盘密码</th>
+                <th scope="col" width="80" class="tc">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <!-- 列表加载loading -->
+        <div class="ui-loading"><i class="ui-loading-icon"></i></div>
+    </div>
+    <!-- 底部分页 -->
+    <div class="table-page-x">
+        <div class="table-page-data dn">
+            共<span class="table-num-length">0</span>名成员, 每页显示<a href="javascript:;" class="table-page-every"><span
+                class="table-num-every">15</span><i class="ui-droplist-arrow"></i></a>
+        </div>
+        <div class="table-page"></div>
+    </div>
+</div>
+</body>
+<script>
+    // 列表综合实例
+    var mixTable = new Table($('#testtable-mix'), {
+        ajaxOptions: {
+            url: '/listdata',
+            data: function () {
+                // 列表外的动态Ajax参数
+                return {
+                    key: encodeURIComponent($('#mixSearchForm input').val())
+                }
+            }
+
+        },
+        pageOptions:{
+            keyMap: {
+                key: '',
+                length: 'total',
+                every: 'rows',
+                current: 'page'
+            }
+        },
+        parse: function (json) {
+            console.log(json)
+            // 返回对应的HTML
+            // 这里应该使用模板技术
+            // 然不同团队使用模板方式不一样
+            // 我这里就按照比较传统的遍历方式拼接演示
+            var html = '';
+            $.each(json.list, function (index, obj) {
+                html = html + '\
+                <tr>\
+                    <td><input type="checkbox" id="mixChk' + obj.id + '"><label class="ui-checkbox" for="mixChk' + obj.id + '"></label></td>\
+                    <td><div class="ell">' + obj.name + '</div></td>\
+                    <td>' + obj.url + '</td>\
+                    <td>' + obj.password + '</td>\
+                </tr>\
+            ';});
+            return html;
+        },
+    });
+</script>
+</html>
