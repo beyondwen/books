@@ -26,6 +26,7 @@
         <th style="width: 220px">书名</th>
         <th style="width: 220px">下载链接</th>
         <th style="width: 100px">密码</th>
+        <th style="width: 100px">详情url</th>
         <th style="width: 100px">操作</th>
     </tr>
     </thead>
@@ -34,6 +35,7 @@
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.name}" class="bookName"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.url}"class="bookUrl"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.password}" class="pwd"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.detailUrl}" class="du"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
             <a th:href="@{${book.url}}" target="_blank"> 下载 </a>
         </td>
@@ -58,10 +60,10 @@
         <li class="page-item" th:if="${pageInfo.pageNum -1 >=1}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -1}}" th:text="${pageInfo.pageNum -1}">1</a></li>
         <li class="page-item active"><a class="page-link" href="#" th:text="${pageInfo.pageNum}" >1</a></li>
         <li class="page-item" th:if="${pageInfo.pageNum +1 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}" th:text="${pageInfo.pageNum +1}">1</a></li>
-        <li class="page-item" th:if="${pageInfo.pageNum +2 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +2}}" th:text="${pageInfo.pageNum +2}">1</a></li>
+        <li id="zhongye" class="page-item" th:if="${pageInfo.pageNum +2 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +2}}" th:text="${pageInfo.pageNum +2}">1</a></li>
         <li class="page-item" th:if="${pageInfo.pageNum +3 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +3}}" th:text="${pageInfo.pageNum +3}">1</a></li>
         <li th:class="${pageInfo.pageNum == pageInfo.pages}?'page-item disabled' : ''" >
-            <a id="pageno" class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}">下一页</a>
+            <a id="pageno" class="netxtPage page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}">下一页</a>
         </li>
         <li class="page-item" >
             <a class="page-link" th:href="@{'list?page=' + ${pageInfo.pages}}">尾页</a>
