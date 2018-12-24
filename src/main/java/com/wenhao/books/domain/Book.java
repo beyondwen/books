@@ -8,6 +8,7 @@ public class Book extends BaseEntity {
     private String password;
 
     private Integer saveState = 0;
+
     private String detailUrl;
 
     public String getDetailUrl() {

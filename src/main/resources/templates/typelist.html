@@ -13,8 +13,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <h2 class="navbar-brand">书籍列表</h2>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="form-inline my-2 my-lg-0" action="/list">
-            <input class="form-control mr-sm-2" type="search" placeholder="书名搜索" aria-label="Search" name="name">
+        <form class="form-inline my-2 my-lg-0" action="/typelist">
+            <input class="form-control mr-sm-2" type="search" placeholder="书名搜索" aria-label="Search" name="bName">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
         </form>
     </div>
@@ -30,14 +30,14 @@
         <th style="width: 100px">操作</th>
     </tr>
     </thead>
-    <tr th:each="book:${pageInfo.list}" class="booktr">
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.id}" class="bookid"></span></td>
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.name}" class="bookName"></span></td>
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.url}"class="bookUrl"></span></td>
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.password}" class="pwd"></span></td>
-        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${book.detailUrl}" class="du"></span></td>
+    <tr th:each="booktype:${pageInfo.list}" class="booktr">
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${booktype.id}" class="bookid"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${booktype.bName}" class="bookName"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${booktype.bUrl}"class="bookUrl"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${booktype.bPassword}" class="pwd"></span></td>
+        <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"><span th:text="${booktype.bDetailUrl}" class="du"></span></td>
         <td style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
-            <a th:href="@{${book.url}}" target="_blank"> 下载 </a>
+            <a th:href="@{${booktype.bUrl}}" target="_blank"> 下载 </a>
         </td>
     </tr>
 </table>
@@ -50,23 +50,23 @@
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         <li class="page-item" >
-            <a id="shouye" class="page-link" th:href="@{'list?page=1'}">首页</a>
+            <a id="shouye" class="page-link" th:href="@{'typelist?page=1'}">首页</a>
         </li>
         <li th:class="${pageInfo.pageNum==1}?'page-item disabled' : ''">
-            <a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -1}}" tabindex="-1">上一页</a>
+            <a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum -1}}" tabindex="-1">上一页</a>
         </li>
-        <li class="page-item" th:if="${pageInfo.pageNum -3 >=1}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -3}}" th:text="${pageInfo.pageNum -3}">1</a></li>
-        <li class="page-item" th:if="${pageInfo.pageNum -2 >=1}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -2}}" th:text="${pageInfo.pageNum -2}">1</a></li>
-        <li class="page-item" th:if="${pageInfo.pageNum -1 >=1}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum -1}}" th:text="${pageInfo.pageNum -1}">1</a></li>
+        <li class="page-item" th:if="${pageInfo.pageNum -3 >=1}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum -3}}" th:text="${pageInfo.pageNum -3}">1</a></li>
+        <li class="page-item" th:if="${pageInfo.pageNum -2 >=1}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum -2}}" th:text="${pageInfo.pageNum -2}">1</a></li>
+        <li class="page-item" th:if="${pageInfo.pageNum -1 >=1}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum -1}}" th:text="${pageInfo.pageNum -1}">1</a></li>
         <li class="page-item active"><a class="page-link" href="#" th:text="${pageInfo.pageNum}" >1</a></li>
-        <li class="page-item" th:if="${pageInfo.pageNum +1 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}" th:text="${pageInfo.pageNum +1}">1</a></li>
-        <li id="zhongye" class="page-item" th:if="${pageInfo.pageNum +2 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +2}}" th:text="${pageInfo.pageNum +2}">1</a></li>
-        <li class="page-item" th:if="${pageInfo.pageNum +3 <= pageInfo.pages}"><a class="page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +3}}" th:text="${pageInfo.pageNum +3}">1</a></li>
+        <li class="page-item" th:if="${pageInfo.pageNum +1 <= pageInfo.pages}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum +1}}" th:text="${pageInfo.pageNum +1}">1</a></li>
+        <li id="zhongye" class="page-item" th:if="${pageInfo.pageNum +2 <= pageInfo.pages}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum +2}}" th:text="${pageInfo.pageNum +2}">1</a></li>
+        <li class="page-item" th:if="${pageInfo.pageNum +3 <= pageInfo.pages}"><a class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum +3}}" th:text="${pageInfo.pageNum +3}">1</a></li>
         <li th:class="${pageInfo.pageNum == pageInfo.pages}?'page-item disabled' : ''" >
-            <a id="pageno" class="netxtPage page-link" th:href="@{'list?page=' + ${pageInfo.pageNum +1}}">下一页</a>
+            <a id="pageno" class="netxtPage page-link" th:href="@{'typelist?page=' + ${pageInfo.pageNum +1}}">下一页</a>
         </li>
         <li class="page-item" >
-            <a id="weiye" class="page-link" th:href="@{'list?page=' + ${pageInfo.pages}}">尾页</a>
+            <a id="weiye" class="page-link" th:href="@{'typelist?page=' + ${pageInfo.pages}}">尾页</a>
         </li>
         <li class="page-item"><a class="page-link" href="#" th:text="${'总共'+pageInfo.pages+'页'}"></a></li>
         <!--<li class="page-item"><span class="input-group-text page-link">跳转到</span></li>

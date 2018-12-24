@@ -25,8 +25,8 @@ public class BookService {
         if (book.getName() != null && book.getName().length() > 0) {
             criteria.andLike(Book::getName, "%" + book.getName() + "%");
         }
-        //criteria.andEqualTo(Book::getSaveState,0);
-        criteria.andIsNotNull(Book::getDetailUrl);
+        criteria.andEqualTo(Book::getSaveState,0);
+//        criteria.andIsNotNull(Book::getDetailUrl);
         return bookMapper.selectByExample(weekend);
     }
 }
